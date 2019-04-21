@@ -8,6 +8,7 @@ $color-green: color("green");
 $color-red: color("red");
 $color-yellow: color("yellow");
 $color-black: color("black");
+$color-white: color("white");
 $color-gray: color("gray");
 $color-gray-light: color("gray-light");
 $color-gray-lighter: color("gray-lighter");
@@ -92,6 +93,14 @@ $font-weight-medium: 500;
 $font-weight-semi-bold: 600;
 $font-weight-bold: 700;
 $font-weight-extra-bold: 800;
+
+// --------------------------------------------------
+// links
+// --------------------------------------------------
+
+$link-color: $color-primary;
+$link-transition: $global-transition-fast;
+$link-color-hover: color("primary", "hover");
 
 // --------------------------------------------------
 // line height

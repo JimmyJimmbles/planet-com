@@ -42,3 +42,21 @@
     }
   }
 }
+
+// --------------------------------------------------
+// link colors
+// --------------------------------------------------
+
+@mixin link-colors($colors: $theme_colors) {
+  @each $key, $color in $colors {
+    $selector: "a.link--#{$key}";
+
+    #{$selector} {
+      color: map-get($color, "base");
+
+      &:hover {
+        color: map-get($color, "hover");
+      }
+    }
+  }
+}

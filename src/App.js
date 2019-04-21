@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 // --------------------------------------------------
 // components
 // --------------------------------------------------
@@ -9,12 +9,17 @@ import Column from "./components/framework/Column";
 import Section from "./components/framework/Section";
 
 import Navigation from "./components/site/Navigation";
+import Styleguide from "./components/site/Styleguide";
+import Home from "./components/site/Home";
+
+import * as ROUTES from "./constants/routes";
 
 // --------------------------------------------------
 // scss
 // --------------------------------------------------
 
-import "./framework/scss/index.scss";
+import "./styles/site/global.scss";
+import "./styles/framework/index.scss";
 
 class App extends Component {
   render() {
@@ -24,18 +29,10 @@ class App extends Component {
           <Section>
             <Navigation />
           </Section>
+
+          <Route exact path={ROUTES.HOME} component={Home} />
+          <Route path={ROUTES.STYLEGUIDE} component={Styleguide} />
         </Router>
-        <Section>
-          <h1>Grids</h1>
-          <Row alignment="middle">
-            <Column breakpoints="xs-12 md-6">
-              <p>Test Paragraph</p>
-            </Column>
-            <Column breakpoints="xs-12 lg-4">
-              <p>Test Paragraph</p>
-            </Column>
-          </Row>
-        </Section>
       </Fragment>
     );
   }

@@ -10,63 +10,68 @@ $theme_colors: (
   ),
   "secondary": (
     "name": "Secondary",
-    "base": #5393ff,
-    "hover": darken(#5393ff, 10%)
+    "base": #7085fe,
+    "hover": darken(#7085fe, 10%)
   ),
   "green": (
     "name": "Green",
-    "base": #68cc1d,
-    "hover": darken(#68cc1d, 10%)
+    "base": #5afe3d,
+    "hover": darken(#5afe3d, 10%)
   ),
   "red": (
     "name": "Red",
-    "base": #ff3d5a,
-    "hover": darken(#ff3d5a, 10%)
+    "base": #fe3d5a,
+    "hover": darken(#fe3d5a, 10%)
   ),
   "yellow": (
     "name": "yellow",
-    "base": #ffe23d,
-    "hover": darken(#ffe23d, 10%)
+    "base": #fee13d,
+    "hover": darken(#fee13d, 10%)
   ),
   "black": (
     "name": "Black",
-    "base": #2d2d2d,
-    "hover": lighten(#2d2d2d, 10%)
+    "base": #0b0d0f,
+    "hover": lighten(#0b0d0f, 10%)
+  ),
+  "white": (
+    "name": "White",
+    "base": #fff,
+    "hover": darken(#fff, 10%)
   ),
   "gray": (
     "name": "Gray",
-    "base": #878787,
-    "hover": darken(#878787, 10%)
+    "base": #343c48,
+    "hover": darken(#343c48, 10%)
   ),
   "gray-light": (
     "name": "Gray Light",
-    "base": #a5a5a5,
-    "hover": darken(#a5a5a5, 10%)
+    "base": #9ca7b8,
+    "hover": darken(#9ca7b8, 10%)
   ),
   "gray-lighter": (
     "name": "Gray Lighter",
-    "base": #e1e1e1,
-    "hover": darken(#e1e1e1, 10%)
+    "base": #cad0d9,
+    "hover": darken(#cad0d9, 10%)
   ),
   "gray-lightest": (
     "name": "Gray Lightest",
-    "base": #ededed,
-    "hover": darken(#ededed, 10%)
+    "base": #eceef1,
+    "hover": darken(#eceef1, 10%)
   ),
   "gray-dark": (
     "name": "Gray Dark",
-    "base": #737373,
-    "hover": darken(#737373, 10%)
+    "base": #2c333d,
+    "hover": darken(#2c333d, 10%)
   ),
   "gray-darker": (
     "name": "Gray Darker",
-    "base": #606060,
-    "hover": darken(#606060, 10%)
+    "base": #242931,
+    "hover": lighten(#242931, 10%)
   ),
   "gray-darkest": (
     "name": "Gray Darkest",
-    "base": #4d4d4d,
-    "hover": darken(#4d4d4d, 10%)
+    "base": #1b2026,
+    "hover": lighten(#1b2026, 10%)
   )
 );
 

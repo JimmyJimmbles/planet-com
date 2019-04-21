@@ -25,7 +25,7 @@ $ npm install
 These are the scripts to build and watch for changes to the front-end assets, like SCSS, JS and image files.
 
 - `$ npm run build` => Builds the app for production.
-- `$ npm run watch` => Runs the app in the development mode.<br>The page will reload if you make edits.<br>
+- `$ npm run start` => Runs the app in the development mode.<br>The page will reload if you make edits.<br>
 - `$ npm run serve` => Runs the app in production mode.
 
 ## Workflow
