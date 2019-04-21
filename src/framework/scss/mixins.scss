@@ -1,0 +1,44 @@
+// --------------------------------------------------
+// columns
+// --------------------------------------------------
+
+@mixin columns() {
+  $column-count: 12;
+  $breakpoints: (
+    "xs": $breakpoint-xs,
+    "sm": $breakpoint-sm,
+    "md": $breakpoint-md,
+    "lg": $breakpoint-lg,
+    "xl": $breakpoint-xl
+  );
+
+  @each $k, $v in $breakpoints {
+    @media (min-width: #{$v}) {
+      @for $i from 1 through $column-count {
+        .column.#{$k}-#{$i} {
+          max-width: percentage(($i / $column-count));
+          flex-basis: percentage(($i / $column-count));
+        }
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// sections
+// --------------------------------------------------
+
+@mixin sections($sizes: $section-sizes) {
+  @each $k, $v in $sizes {
+    $selector: ".section";
+
+    @if ($k != "base") {
+      $selector: "#{$selector}--#{$k}";
+    }
+
+    #{$selector} {
+      padding-top: $v;
+      padding-bottom: $v;
+    }
+  }
+}
