@@ -1,0 +1,92 @@
+// --------------------------------------------------
+// base
+// --------------------------------------------------
+
+$theme_colors: (
+  "primary": (
+    "name": "Primary",
+    "base": #3d5afe,
+    "hover": darken(#3d5afe, 10%)
+  ),
+  "secondary": (
+    "name": "Secondary",
+    "base": #7085fe,
+    "hover": darken(#7085fe, 10%)
+  ),
+  "green": (
+    "name": "Green",
+    "base": #5afe3d,
+    "hover": darken(#5afe3d, 10%)
+  ),
+  "red": (
+    "name": "Red",
+    "base": #fe3d5a,
+    "hover": darken(#fe3d5a, 10%)
+  ),
+  "yellow": (
+    "name": "yellow",
+    "base": #fee13d,
+    "hover": darken(#fee13d, 10%)
+  ),
+  "black": (
+    "name": "Black",
+    "base": #0b0d0f,
+    "hover": lighten(#0b0d0f, 10%)
+  ),
+  "white": (
+    "name": "White",
+    "base": #fff,
+    "hover": darken(#fff, 10%)
+  ),
+  "gray": (
+    "name": "Gray",
+    "base": #343c48,
+    "hover": darken(#343c48, 10%)
+  ),
+  "gray-light": (
+    "name": "Gray Light",
+    "base": #9ca7b8,
+    "hover": darken(#9ca7b8, 10%)
+  ),
+  "gray-lighter": (
+    "name": "Gray Lighter",
+    "base": #cad0d9,
+    "hover": darken(#cad0d9, 10%)
+  ),
+  "gray-lightest": (
+    "name": "Gray Lightest",
+    "base": #eceef1,
+    "hover": darken(#eceef1, 10%)
+  ),
+  "gray-dark": (
+    "name": "Gray Dark",
+    "base": #2c333d,
+    "hover": darken(#2c333d, 10%)
+  ),
+  "gray-darker": (
+    "name": "Gray Darker",
+    "base": #242931,
+    "hover": lighten(#242931, 10%)
+  ),
+  "gray-darkest": (
+    "name": "Gray Darkest",
+    "base": #1b2026,
+    "hover": lighten(#1b2026, 10%)
+  )
+);
+
+@function color($name: null, $key: null) {
+  $color: null;
+  $value: "";
+
+  @if ($name) {
+    $color: map-get($theme_colors, $name);
+    $value: map-get($color, "base");
+
+    @if ($key) {
+      $value: map-get($color, $key);
+    }
+  }
+
+  @return $value;
+}

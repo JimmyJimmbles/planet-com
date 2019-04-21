@@ -1,0 +1,69 @@
+// --------------------------------------------------
+// base
+// --------------------------------------------------
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// --------------------------------------------------
+// navbar brand
+// --------------------------------------------------
+
+.navbar__brand {
+  position: relative;
+  font-weight: 700;
+  color: $color-gray;
+  text-transform: uppercase;
+}
+
+// --------------------------------------------------
+// navbar nav
+// --------------------------------------------------
+
+.navbar__nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// --------------------------------------------------
+// navbar nav
+// --------------------------------------------------
+
+.nav__item {
+  display: inline-block;
+  list-style: none;
+
+  & > a {
+    position: relative;
+    font-weight: 500;
+    font-size: $font-size-xs;
+    padding: 15px 10px;
+    color: $color-gray;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      left: 0;
+      bottom: -5px;
+      background-color: $color-primary;
+      transition: $global-transition-fast;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}

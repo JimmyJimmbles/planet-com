@@ -1,0 +1,49 @@
+// --------------------------------------------------
+// base
+// --------------------------------------------------
+
+a,
+a.link {
+  color: $link-color;
+  transition: $link-transition;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-color-hover;
+  }
+}
+
+// --------------------------------------------------
+// fancy
+// --------------------------------------------------
+
+.a--fancy {
+  position: relative;
+  color: $color-gray-light;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 50%;
+    bottom: -5px;
+    background-color: $color-primary;
+    transform: translate(-50%, 0);
+    transition: $global-transition-fast;
+  }
+
+  &:hover {
+    color: color("gray-light", "hover");
+
+    &::after {
+      width: 93%;
+    }
+  }
+}
+
+// --------------------------------------------------
+// colors
+// --------------------------------------------------
+
+@include link-colors();

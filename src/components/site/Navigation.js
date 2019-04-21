@@ -8,16 +8,17 @@ class Navigation extends Component {
     return (
       <Fragment>
         <nav className="navbar">
-          <div className="navbar__container">
-            <ul className="navbar__nav">
-              <li className="nav__item">
-                <Link to={ROUTES.STYLEGUIDE}>Style guide</Link>
-              </li>
-              <li className="nav__item">
-                <Link to={ROUTES.STYLEGUIDE}>Home</Link>
-              </li>
-            </ul>
-          </div>
+          <Link to={ROUTES.HOME} class="navbar__brand">
+            Plan.It
+          </Link>
+          <ul className="navbar__nav">
+            <li className="nav__item">
+              <Link to={ROUTES.STYLEGUIDE}>Style guide</Link>
+            </li>
+            <li className="nav__item">
+              <Link to={ROUTES.HOME}>Home</Link>
+            </li>
+          </ul>
         </nav>
       </Fragment>
     );
