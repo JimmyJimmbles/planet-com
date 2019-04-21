@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import Row from "../framework/Row";
 import Column from "../framework/Column";
 import Section from "../framework/Section";
@@ -18,28 +18,28 @@ class Styleguide extends Component {
                 <span className="placeholder">.column.sm-2</span>
               </Column>
               <Column breakpoints="xs-12 sm-8">
-                <span className="placeholder">.column.sm-10</span>
+                <span className="placeholder">.column.sm-8</span>
               </Column>
               <Column breakpoints="xs-12 sm-4">
-                <span className="placeholder">.column.sm-2</span>
+                <span className="placeholder">.column.sm-4</span>
               </Column>
               <Column breakpoints="xs-12 sm-6">
-                <span className="placeholder">.column.sm-10</span>
+                <span className="placeholder">.column.sm-6</span>
               </Column>
               <Column breakpoints="xs-12 sm-6">
-                <span className="placeholder">.column.sm-2</span>
+                <span className="placeholder">.column.sm-6</span>
               </Column>
               <Column breakpoints="xs-12 sm-4">
-                <span className="placeholder">.column.sm-2</span>
+                <span className="placeholder">.column.sm-4</span>
               </Column>
               <Column breakpoints="xs-12 sm-8">
-                <span className="placeholder">.column.sm-2</span>
+                <span className="placeholder">.column.sm-8</span>
               </Column>
               <Column breakpoints="xs-12 sm-2">
                 <span className="placeholder">.column.sm-2</span>
               </Column>
               <Column breakpoints="xs-12 sm-10">
-                <span className="placeholder">.column.sm-2</span>
+                <span className="placeholder">.column.sm-10</span>
               </Column>
             </Row>
           </div>

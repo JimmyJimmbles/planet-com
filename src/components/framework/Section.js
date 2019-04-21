@@ -9,7 +9,7 @@ class Section extends Component {
   };
 
   render() {
-    const { id, containerSize, children } = this.state;
+    const { id, children } = this.state;
     return (
       <section id={id} className={this.getSectionClasses()}>
         <div className={this.getContainerClasses()}>{children}</div>

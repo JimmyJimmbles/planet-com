@@ -1,25 +1,26 @@
+// --------------------------------------------------
+// base
+// --------------------------------------------------
+
 import React, { Component, Fragment } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import * as ROUTES from "../../constants/routes";
+
 // --------------------------------------------------
 // components
 // --------------------------------------------------
 
-import Row from "./components/framework/Row";
-import Column from "./components/framework/Column";
-import Section from "./components/framework/Section";
-
-import Navigation from "./components/site/Navigation";
-import Styleguide from "./components/site/Styleguide";
-import Home from "./components/site/Home";
-
-import * as ROUTES from "./constants/routes";
+import Section from "../framework/Section";
+import Navigation from "./Navigation";
+import Styleguide from "./Styleguide";
+import Home from "./Home";
 
 // --------------------------------------------------
-// scss
+// styles
 // --------------------------------------------------
 
-import "./styles/site/global.scss";
-import "./styles/framework/index.scss";
+import "../../styles/site/global.scss";
+import "../../styles/framework/index.scss";
 
 class App extends Component {
   render() {

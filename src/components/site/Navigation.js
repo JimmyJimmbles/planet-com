@@ -13,10 +13,10 @@ class Navigation extends Component {
           </Link>
           <ul className="navbar__nav">
             <li className="nav__item">
-              <Link to={ROUTES.STYLEGUIDE}>Style guide</Link>
+              <Link to={ROUTES.HOME}>Home</Link>
             </li>
             <li className="nav__item">
-              <Link to={ROUTES.HOME}>Home</Link>
+              <Link to={ROUTES.STYLEGUIDE}>Style guide</Link>
             </li>
           </ul>
         </nav>
