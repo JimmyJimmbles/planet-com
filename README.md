@@ -20,12 +20,6 @@ $ cd planet-com
 $ npm install
 ```
 
-4. Install Assets
-
-```
-$ npm install
-```
-
 ## Front-end Scripts
 
 These are the scripts to build and watch for changes to the front-end assets, like SCSS, JS and image files.
