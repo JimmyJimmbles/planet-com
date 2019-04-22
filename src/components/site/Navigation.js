@@ -8,7 +8,7 @@ class Navigation extends Component {
     return (
       <Fragment>
         <nav className="navbar">
-          <Link to={ROUTES.HOME} class="navbar__brand">
+          <Link to={ROUTES.HOME} className="navbar__brand">
             Plan.It
           </Link>
           <ul className="navbar__nav">

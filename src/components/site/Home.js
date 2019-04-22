@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Section from "../framework/Section";
+import Section from "../Framework/Section";
 
 class Home extends Component {
   render() {

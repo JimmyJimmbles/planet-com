@@ -1,0 +1,61 @@
+// --------------------------------------------------
+// variables
+// --------------------------------------------------
+
+$form-input-border: 1px solid $color-gray-lighter;
+$input-color: $color-gray;
+$input-bg-color: $color-gray-lightest;
+$input-padding: 1rem 0.75rem;
+
+// --------------------------------------------------
+// base
+// --------------------------------------------------
+
+.form {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+// --------------------------------------------------
+// field
+// --------------------------------------------------
+
+.form__field {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+// --------------------------------------------------
+// label
+// --------------------------------------------------
+
+.form__label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: $color-black;
+  letter-spacing: 1px;
+}
+
+// --------------------------------------------------
+// input
+// --------------------------------------------------
+
+.form__input {
+  display: block;
+  background-color: $input-bg-color;
+  border: $form-input-border;
+  border-radius: $global-border-radius;
+  padding: $input-padding;
+  width: 100%;
+  outline: 0;
+  transition: $global-transition-fast;
+
+  &:active,
+  &:focus {
+    background-color: $color-white;
+    border-color: $color-gray-light;
+    box-shadow: 0 0 0 1px $color-gray-light;
+  }
+}

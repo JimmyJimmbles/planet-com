@@ -1,23 +1,22 @@
-// --------------------------------------------------
-// base
-// --------------------------------------------------
-
+/**
+ * base
+ */
 import React, { Component, Fragment } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import * as ROUTES from "../../constants/routes";
 
-// --------------------------------------------------
-// components
-// --------------------------------------------------
+/**
+ * components
+ */
 
-import Section from "../framework/Section";
+import Section from "../Framework/Section";
 import Navigation from "./Navigation";
 import Styleguide from "./Styleguide";
 import Home from "./Home";
 
-// --------------------------------------------------
-// styles
-// --------------------------------------------------
+/**
+ * styles
+ */
 
 import "../../styles/site/global.scss";
 import "../../styles/framework/index.scss";
